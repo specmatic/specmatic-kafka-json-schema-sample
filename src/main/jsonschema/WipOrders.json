@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WipOrders",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "status"],
+  "properties": {
+    "id": {"type": "integer", "minimum": 1, "maximum": 100},
+    "status": {"type": "string", "enum": ["PENDING", "PROCESSING", "COMPLETED", "CANCELLED"]}
+  }
+}

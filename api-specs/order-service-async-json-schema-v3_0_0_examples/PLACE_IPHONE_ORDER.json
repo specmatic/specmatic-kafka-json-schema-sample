@@ -1,0 +1,26 @@
+{
+  "name": "PLACE_IPHONE_ORDER",
+  "receive": {
+    "topic": "new-orders",
+    "key": 1,
+    "payload": {
+      "id": 1,
+      "orderItems": [
+        {
+          "id": 1,
+          "name": "iPhone",
+          "quantity": 10,
+          "price": 5000
+        }
+      ]
+    }
+  },
+  "send": {
+    "topic": "wip-orders",
+    "key": 1,
+    "payload": {
+      "id": 1,
+      "status": "PROCESSING"
+    }
+  }
+}
