@@ -35,7 +35,7 @@ dependencies {
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.22.1'
 
     implementation("io.confluent:kafka-json-schema-serializer:7.9.10")
-    implementation("io.confluent:kafka-schema-registry-client:7.9.5")
+    implementation("io.confluent:kafka-schema-registry-client:7.9.10")
 
     testImplementation platform('org.junit:junit-bom:5.14.4')
     testImplementation("io.specmatic.enterprise:executable:$specmaticEnterpriseVersion")
